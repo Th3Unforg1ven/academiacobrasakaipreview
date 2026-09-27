@@ -1,14 +1,12 @@
 (() => {
  const reel=document.querySelector('.hero-reel'); if(!reel)return;
  const slides=[...reel.querySelectorAll('.reel-slide')], choices=[...reel.querySelectorAll('[data-slide]')], pause=reel.querySelector('.reel-pause');
- const motion=matchMedia('(prefers-reduced-motion: reduce)');let current=0,paused=motion.matches,hover=false,focused=false,visible=true,timer;
- function schedule(){clearTimeout(timer);if(!paused&&!hover&&!focused&&visible&&!document.hidden)timer=setTimeout(()=>show((current+1)%slides.length),7000)}
+ const motion=matchMedia('(prefers-reduced-motion: reduce)');let current=0,paused=motion.matches,visible=true,timer;
+ function schedule(){clearTimeout(timer);if(!paused&&visible&&!document.hidden)timer=setTimeout(()=>show((current+1)%slides.length),7000)}
  function show(index){current=index;slides.forEach((slide,i)=>{slide.classList.toggle('is-active',i===index);slide.inert=i!==index;slide.setAttribute('aria-hidden',String(i!==index))});choices.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===index)));schedule()}
  function updatePause(){pause.setAttribute('aria-label',paused?'Retomar troca automática':'Pausar troca automática');pause.querySelector('span').textContent=paused?'Retomar':'Pausar';schedule()}
  choices.forEach((button,i)=>button.addEventListener('click',()=>show(i)));
  pause.addEventListener('click',()=>{paused=!paused;updatePause()});
- reel.addEventListener('mouseenter',()=>{hover=true;schedule()});reel.addEventListener('mouseleave',()=>{hover=false;schedule()});
- reel.addEventListener('focusin',()=>{focused=true;schedule()});reel.addEventListener('focusout',event=>{if(!reel.contains(event.relatedTarget)){focused=false;schedule()}});
  reel.addEventListener('keydown',event=>{if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();show((current+(event.key==='ArrowRight'?1:-1)+slides.length)%slides.length)}});
  document.addEventListener('visibilitychange',schedule);motion.addEventListener('change',()=>{paused=motion.matches;updatePause()});
  new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;schedule()},{threshold:.15}).observe(reel);updatePause();
