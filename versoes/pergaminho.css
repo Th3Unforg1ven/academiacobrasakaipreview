@@ -122,3 +122,6 @@ html.photo-is-open{overflow:hidden}
 @media(min-width:801px){.hero-reel{height:clamp(580px,43vw,690px)}.reel-recent .reel-photo{object-position:center 43%}.reel-copy{max-width:760px}}
 @media(max-width:800px){.reel-recent .reel-shade{background:linear-gradient(0deg,#080b09 5%,#080b09 27%,#080b097d 47%,transparent 72%)}}
 @media(max-width:650px){.reel-recent .reel-photo{filter:contrast(1.045) saturate(.98) brightness(1.04)}.reel-recent .reel-shade{background:linear-gradient(0deg,#080b09 0%,#080b09 51%,#080b0980 66%,transparent 85%)}}
+
+/* Cor e nitidez agora estao nos arquivos tratados, sem acumular filtros. */
+.reel-recent .reel-photo,.p-shihan .archive-enlarge img,.p-dojo-pair .archive-enlarge img,.p-competitions .archive-enlarge img,.p-medals .archive-enlarge img{filter:none}
