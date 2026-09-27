@@ -2,7 +2,7 @@
  const reel=document.querySelector('.hero-reel'); if(!reel)return;
  const slides=[...reel.querySelectorAll('.reel-slide')], choices=[...reel.querySelectorAll('[data-slide]')], pause=reel.querySelector('.reel-pause');
  const motion=matchMedia('(prefers-reduced-motion: reduce)');let current=0,paused=motion.matches,visible=true,timer;
- function schedule(){clearTimeout(timer);if(!paused&&visible&&!document.hidden)timer=setTimeout(()=>show((current+1)%slides.length),7000)}
+ function schedule(){clearTimeout(timer);if(!paused&&visible&&!document.hidden)timer=setTimeout(()=>show((current+1)%slides.length),4000)}
  function show(index){current=index;slides.forEach((slide,i)=>{slide.classList.toggle('is-active',i===index);slide.inert=i!==index;slide.setAttribute('aria-hidden',String(i!==index))});choices.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===index)));schedule()}
  function updatePause(){pause.setAttribute('aria-label',paused?'Retomar troca automática':'Pausar troca automática');pause.querySelector('span').textContent=paused?'Retomar':'Pausar';schedule()}
  choices.forEach((button,i)=>button.addEventListener('click',()=>show(i)));
