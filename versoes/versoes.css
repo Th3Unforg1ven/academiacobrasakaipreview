@@ -1,0 +1,70 @@
+@font-face{font-family:Zen;src:url('../assets/fonts/zen.woff2')}@font-face{font-family:Reggae;src:url('../assets/fonts/reggae.woff2')}@font-face{font-family:Yuji;src:url('../assets/fonts/yuji.woff2')}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:#f3f0e7;color:#0b0b0b;font:16px/1.75 Zen,sans-serif}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}h1,h2,h3,p,figure{margin:0}h1,h2,h3{font-weight:400;line-height:1.16;letter-spacing:-.035em}h2{font-size:45px}h3{font-size:27px}em{font-style:normal;color:#ab2127}a:focus-visible{outline:2px solid #ab2127;outline-offset:5px}.skip{position:fixed;top:-90px;z-index:100;background:#fff;padding:15px}.skip:focus{top:0}.content{width:min(1200px,86%);margin:auto}.compare{display:flex;align-items:center;justify-content:center;gap:25px;background:#e4ddd0;color:#292722;padding:12px 4%;font-size:11px;position:sticky;top:0;z-index:20;min-height:52px}.compare>span{font-size:8px;letter-spacing:.15em}.compare a{padding:6px 0}.compare a[aria-current]{color:#ab2127;font-weight:bold}.compare .original{margin-left:auto;font-size:10px}.masthead{display:flex;justify-content:space-between;align-items:center;padding-block:23px;gap:30px}.brand{display:flex;align-items:center;gap:14px;font-size:11px;letter-spacing:.13em}.brand img{border-radius:50%}.brand small{display:block;font-size:8px;letter-spacing:.2em}.masthead nav{display:flex;gap:30px;font-size:12px}.signature{position:relative;aspect-ratio:1774/240;overflow:hidden;mix-blend-mode:multiply}.signature img{position:absolute;width:100%;max-width:none;top:-95.833%}.tag{font-size:9px;letter-spacing:.17em;color:#ab2127;margin-bottom:20px}.action{display:inline-flex;align-items:center;gap:25px;padding:12px 0;min-height:48px;font-size:13px}.action svg,.readings svg{width:25px;height:25px;flex-shrink:0;color:#ab2127;transition:transform .4s cubic-bezier(.2,.8,.2,1)}.action:hover svg,.readings a:hover svg{transform:translateX(5px)}.action.strong{background:#ab2127;color:#f3f0e7;padding:15px 24px;border-radius:1px 1px 25px 1px}.action.strong svg{color:inherit}.section{padding-block:75px}figure img{width:100%;height:auto}figcaption{font-size:8px;letter-spacing:.12em;margin-top:13px;color:#625e56}.activities{display:grid;grid-template-columns:repeat(3,1fr);gap:65px;margin-top:45px}.activities p:not(.tag){font-size:15px;color:#625e56;margin:20px 0;max-width:32ch}.readings{display:grid;grid-template-columns:repeat(3,1fr);gap:55px;margin-top:35px}.readings h3{font-size:25px}.readings p{font-size:14px;color:#625e56;margin-top:15px}.readings a>span{display:flex;align-items:center;gap:15px;font-size:12px;margin-top:20px}.contact{display:grid;grid-template-columns:1.2fr 1fr;gap:80px;padding-block:75px}.contact h2{margin-bottom:30px}.contact>div:last-child{padding-top:30px}.contact p:not(.tag){margin-bottom:15px}.contact small{font-size:12px;color:#625e56;display:block}.contact>div:last-child .action{margin-top:15px}footer{display:flex;justify-content:space-between;gap:30px;font-size:9px;padding-block:35px}
+/* Pergaminho: composição vertical, margem ilustrada e acervo sobre papel. */
+.pergaminho{background:#f3f0e7}.pergaminho:before{content:'';position:fixed;inset:0;pointer-events:none;z-index:30;opacity:.04;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3'/%3E%3C/filter%3E%3Cpath fill='%235c5249' filter='url(%23n)' d='M0 0h150v150H0z'/%3E%3C/svg%3E")}.scroll-cover{position:relative;overflow:hidden;padding:25px 0 75px;min-height:850px}.scroll-cover>.tag{text-align:center}.scroll-cover .signature{width:85%;margin:0 auto 50px;z-index:2}.scroll-heading{position:relative;z-index:2;padding-left:8%;display:flex;gap:28px;align-items:start}.scroll-heading>span{font:42px Yuji,serif;color:#ab2127;writing-mode:vertical-rl;padding-top:10px}.scroll-heading h1{font:clamp(45px,5vw,70px)/1.3 Reggae,serif;letter-spacing:-.04em}.scroll-snake{position:absolute;width:45%;right:-5%;top:210px;mix-blend-mode:multiply;opacity:.65;mask-image:linear-gradient(0deg,transparent,#000 25%);pointer-events:none}.scroll-intro{position:relative;z-index:2;margin:30px 0 0 14%;font-size:15px;color:#625e56}.scroll-intro .action{margin-top:23px}.scroll-history{padding-top:10px}.pergaminho h2{font-family:Reggae,serif;font-size:39px;line-height:1.35}.pergaminho h3{font-family:Reggae,serif;font-size:25px;line-height:1.4}.section-title{margin-left:7%;margin-bottom:40px}.history-layout{display:grid;grid-template-columns:1.3fr .7fr;gap:75px;align-items:center}.history-layout>div>p{font-size:16px;color:#625e56;max-width:34ch}.ink-belt{width:80%;mix-blend-mode:multiply;margin-top:25px}.paper-photo{max-width:850px;padding-block:35px}.pergaminho .contact{background:#e4ddd050;padding:45px;margin-block:25px}
+/* Sóbrio: fotografia integral, marca pequena e hierarquia silenciosa. */
+.sobrio{background:#f6f5f0}.sobrio .masthead{padding-block:25px}.quiet-photo{width:min(1440px,94%);margin:auto}.quiet-photo img{width:100%;height:auto}.quiet-caption{display:flex;justify-content:space-between;font-size:8px;letter-spacing:.14em;margin-top:16px;color:#625e56}.quiet-title{display:grid;grid-template-columns:1.3fr .7fr;gap:70px;padding-block:38px 45px;align-items:end}.quiet-title h1{font-size:clamp(33px,3.8vw,52px);font-weight:600;line-height:1.25}.quiet-title p{font-size:15px;color:#625e56;margin-bottom:20px}.sobrio h2{font-size:39px;font-weight:600;line-height:1.3}.sobrio h3{font-size:25px;font-weight:600}.quiet-about{display:grid;grid-template-columns:.85fr 1.15fr;gap:95px;align-items:center}.quiet-about>div>p:not(.tag){font-size:16px;color:#625e56;margin:25px 0}.quiet-practice{background:#eae8e1}.sobrio .action.strong{border-radius:0 0 22px 0;background:#171916}.sobrio .contact{padding-top:30px}
+/* Luta: cartaz tipográfico, massa vermelha, escala e corte de cor. */
+.luta{background:#111210;color:#f3f0e7}.luta .masthead{background:#111210}.luta .compare{background:#f3f0e7}.fight-cover{background:#ab2127;color:#f3f0e7;overflow:hidden}.fight-cover>.content{position:relative;padding-block:35px 45px}.fight-cover .signature{filter:invert(1);mix-blend-mode:screen;width:68%;position:relative;z-index:2;margin-bottom:22px}.fight-disciplines{font-size:10px;letter-spacing:.2em;position:relative;z-index:2}.fight-cover h1{font:clamp(58px,8.3vw,115px)/1.04 Reggae,serif;letter-spacing:-.06em;position:relative;z-index:2;margin:32px 0}.fight-cover h1>span{color:#111210}.fight-snake{position:absolute;right:-6%;top:80px;width:46%;mix-blend-mode:multiply;opacity:.85;pointer-events:none}.fight-invite{display:flex;gap:50px;align-items:center;position:relative;z-index:2}.fight-invite>p{font-size:11px;letter-spacing:.1em}.fight-invite .strong{background:#111210}.fight-strip{display:flex;justify-content:space-around;gap:25px;padding:23px 5%;font:18px Reggae,serif;background:#f3f0e7;color:#111210}.luta h2{font:clamp(38px,4.4vw,59px)/1.15 Reggae,serif}.luta h3{font:26px/1.4 Reggae,serif}.luta .tag{color:#e18d92}.luta .activities{gap:45px}.luta .activities p:not(.tag){color:#beb9ae}.luta .activities article:first-child{background:#22241e;padding:25px;margin:-25px}.fight-history{display:grid;grid-template-columns:1.1fr 1fr;gap:75px;align-items:center;padding-top:20px}.fight-history>div>p:not(.tag){font-size:16px;color:#beb9ae;margin:25px 0}.luta figcaption{color:#bfb9af}.fight-reading{background:#e4ddd0;color:#111210}.fight-reading .tag{color:#ab2127}.luta .contact small{color:#bfb9af}.luta .contact .tag{color:#e18d92}.luta .action svg{color:#e18d92}.luta .strong svg{color:#f3f0e7}.luta .readings svg{color:#ab2127}
+@media(max-width:800px){html{scroll-padding-top:120px}.compare{gap:3px 18px;justify-content:start;flex-wrap:wrap;padding:9px 7%;font-size:10px}.compare>span{width:100%;font-size:7px}.compare .original{display:none}.content{width:86%}.masthead{display:block;padding-block:18px}.brand img{width:40px;height:40px}.brand{font-size:10px}.masthead nav{margin-top:17px;gap:24px;font-size:11px}.section{padding-block:45px}h2{font-size:33px}.activities,.readings{grid-template-columns:1fr;gap:28px;margin-top:30px}.activities p:not(.tag){margin-block:13px;max-width:none}.activities h3 br{display:initial}.contact{grid-template-columns:1fr;gap:10px;padding-block:40px}.contact>div:last-child{padding-top:15px}footer{display:block;font-size:8px}footer>a{display:block;margin-top:15px}.scroll-cover{min-height:690px;padding-top:15px;padding-bottom:45px}.scroll-cover .signature{width:100%;margin-bottom:38px}.scroll-heading{padding:0;gap:15px}.scroll-heading>span{font-size:27px}.scroll-heading h1{font-size:36px;line-height:1.38}.scroll-snake{width:63%;right:-20%;top:240px;opacity:.24}.scroll-intro{margin-left:0;margin-top:28px;font-size:14px;max-width:26ch}.scroll-cover>.tag{font-size:8px;text-align:left}.section-title{margin-left:0;margin-bottom:25px}.history-layout{grid-template-columns:1fr;gap:25px}.history-layout>div>p{max-width:none;font-size:15px}.ink-belt{width:55%;margin:15px 0 0 auto}.pergaminho h2{font-size:31px}.pergaminho h3{font-size:23px}.paper-photo{padding-block:10px}.pergaminho .contact{padding:25px}.quiet-photo{width:100%}.quiet-caption{font-size:7px;gap:20px}.quiet-title{grid-template-columns:1fr;gap:25px;padding-block:28px}.quiet-title h1{font-size:33px}.quiet-title p{font-size:14px}.quiet-about{grid-template-columns:1fr;gap:25px}.sobrio h2{font-size:31px}.sobrio h3{font-size:24px}.quiet-about>div>p:not(.tag){font-size:15px}.fight-cover .signature{width:100%;margin-bottom:22px}.fight-cover h1{font-size:51px;margin-block:30px}.fight-snake{width:75%;right:-38%;top:120px;opacity:.48}.fight-invite{display:block}.fight-invite .action{margin-top:18px}.fight-strip{font-size:10px;padding:18px 5%;gap:12px}.luta h2{font-size:35px}.luta h3{font-size:23px}.luta .activities{gap:30px}.luta .activities article:first-child{padding:20px;margin:0 -20px}.fight-history{grid-template-columns:1fr;gap:25px}.fight-history>div>p:not(.tag){font-size:15px}.luta .action{font-size:12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* Abertura da direção escolhida: convite, assinatura e contato. */
+.pergaminho .scroll-cover{min-height:0;padding-bottom:75px}
+.pergaminho .scroll-cover .signature{width:76%;margin-bottom:30px}
+.pergaminho .scroll-heading h1{font-size:clamp(38px,4.3vw,60px);line-height:1.25}
+.pergaminho .scroll-intro{margin-top:24px;max-width:570px}
+.pergaminho .hero-values{font-size:10px;letter-spacing:.18em;color:#ab2127;margin-bottom:15px}
+.pergaminho .hero-promise{font-size:21px;line-height:1.5;color:#171916;margin-bottom:13px}
+.pergaminho .hero-details{font-size:15px;line-height:1.7;max-width:43ch}
+.pergaminho .hero-actions{display:flex;gap:24px;align-items:center;flex-wrap:wrap;margin-top:22px}
+.pergaminho .hero-actions .action{margin-top:0}
+.pergaminho .hero-guidance{font-size:12px;line-height:1.6;max-width:46ch;margin-top:14px}
+.pergaminho .scroll-snake{top:200px;width:38%;right:-7%}
+@media(max-width:800px){
+.pergaminho .scroll-cover{padding-bottom:50px}
+.pergaminho .scroll-cover .signature{width:100%;margin-bottom:28px}
+.pergaminho .scroll-heading h1{font-size:32px}
+.pergaminho .scroll-heading{gap:12px}
+.pergaminho .scroll-intro{max-width:none;margin-top:24px}
+.pergaminho .hero-values{font-size:9px;letter-spacing:.12em}
+.pergaminho .hero-promise{font-size:18px}
+.pergaminho .hero-details{font-size:14px;max-width:30ch}
+.pergaminho .hero-actions{gap:15px;align-items:flex-start;flex-direction:column}
+.pergaminho .hero-guidance{font-size:11px;max-width:34ch}
+.pergaminho .scroll-snake{top:160px;width:62%;right:-29%;opacity:.13}
+}
+/* Composição aberta: conteúdo nas laterais e nanquim até a borda. */
+.pergaminho{--page-edge:clamp(24px,3vw,64px)}
+.pergaminho .content{width:calc(100% - var(--page-edge)*2);max-width:none}
+.pergaminho .compare{padding-inline:var(--page-edge);justify-content:flex-start}
+.pergaminho .scroll-cover.content{width:100%;padding:25px var(--page-edge) 80px;isolation:isolate}
+.pergaminho .scroll-cover>.tag{text-align:left;margin-bottom:16px}
+.pergaminho .scroll-cover .signature{width:66%;max-width:1050px;margin:0 0 34px -1%}
+.pergaminho .scroll-heading{padding-left:0;gap:18px}
+.pergaminho .scroll-heading>span{position:absolute;right:0;top:-25px;font-size:37px}
+.pergaminho .scroll-heading h1{font-size:clamp(38px,4.4vw,76px)}
+.pergaminho .scroll-intro{margin-left:0;max-width:600px}
+.pergaminho .scroll-snake{width:42%;right:-4%;top:155px;opacity:.72;z-index:-1}
+.pergaminho .section-title{margin-left:0}
+.pergaminho .history-layout{grid-template-columns:1.25fr 1fr;gap:clamp(35px,7vw,140px)}
+.pergaminho .history-layout>figure{margin-left:calc(-1 * var(--page-edge))}
+.pergaminho .history-layout figcaption{padding-left:var(--page-edge)}
+.pergaminho .history-layout>div>p{max-width:42ch}
+.pergaminho .ink-belt{width:65%;max-width:400px;margin-left:auto}
+.pergaminho .paper-photo.content{width:75%;max-width:none;margin:0 0 0 auto;padding-block:45px}
+.pergaminho .paper-photo figcaption{padding-right:var(--page-edge);text-align:right}
+.pergaminho .contact.content{width:100%;padding:60px var(--page-edge);gap:10vw}
+@media(max-width:800px){
+.pergaminho{--page-edge:20px}
+.pergaminho .compare{gap:3px 14px}
+.pergaminho .scroll-cover.content{padding-top:18px;padding-bottom:45px}
+.pergaminho .scroll-cover .signature{width:100%;margin-bottom:26px}
+.pergaminho .scroll-heading h1{font-size:32px;padding-right:15px}
+.pergaminho .scroll-heading>span{right:-5px;top:3px;font-size:23px;opacity:.8}
+.pergaminho .scroll-snake{width:72%;right:-35%;top:165px;opacity:.16}
+.pergaminho .history-layout{grid-template-columns:1fr;gap:25px}
+.pergaminho .history-layout>figure{margin-right:calc(-1 * var(--page-edge))}
+.pergaminho .paper-photo.content{width:100%;padding-block:25px}
+.pergaminho .contact.content{padding:35px var(--page-edge);gap:15px}
+}
+.pergaminho .scroll-cover.content{background:#f3f0e7}
