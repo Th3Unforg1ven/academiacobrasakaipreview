@@ -110,3 +110,15 @@ html.photo-is-open{overflow:hidden}
 .p-together .p-dojo-pair figure:first-child img{object-position:50% 62%}
 .p-dojo-pair figcaption{margin-top:12px;line-height:1.6}
 @media(max-width:650px){.p-together-intro{grid-template-columns:1fr;gap:20px;margin-bottom:28px}.p-together-intro>p{font-size:15px;max-width:none}.p-dojo-pair{grid-template-columns:1fr;gap:24px}.p-together .p-dojo-pair img{aspect-ratio:3/2}.p-together .p-dojo-pair figcaption{font-size:9px}}
+
+/* Tratamento fotográfico não destrutivo: preservar rostos e arquivos de origem. */
+.reel-recent .reel-photo{filter:contrast(1.055) saturate(.96) brightness(1.045)}
+.reel-recent .reel-shade{background:linear-gradient(0deg,#080b09f5 0%,#080b09d9 12%,#080b0950 37%,transparent 66%),linear-gradient(90deg,#080b096b 0%,#080b0926 43%,transparent 75%)}
+.reel-recent .reel-serpent{opacity:.06}
+.p-shihan .archive-enlarge img{filter:brightness(1.045) contrast(1.045) saturate(1.04)}
+.p-dojo-pair .archive-enlarge img{filter:brightness(1.045) contrast(1.035) saturate(.96)}
+.p-competitions .archive-enlarge img{filter:brightness(1.035) contrast(1.035) saturate(.97)}
+.p-medals .archive-enlarge img{filter:brightness(1.025) contrast(1.025)}
+@media(min-width:801px){.hero-reel{height:clamp(580px,43vw,690px)}.reel-recent .reel-photo{object-position:center 43%}.reel-copy{max-width:760px}}
+@media(max-width:800px){.reel-recent .reel-shade{background:linear-gradient(0deg,#080b09 5%,#080b09 27%,#080b097d 47%,transparent 72%)}}
+@media(max-width:650px){.reel-recent .reel-photo{filter:contrast(1.045) saturate(.98) brightness(1.04)}.reel-recent .reel-shade{background:linear-gradient(0deg,#080b09 0%,#080b09 51%,#080b0980 66%,transparent 85%)}}
