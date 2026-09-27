@@ -125,3 +125,8 @@ html.photo-is-open{overflow:hidden}
 
 /* Cor e nitidez agora estao nos arquivos tratados, sem acumular filtros. */
 .reel-recent .reel-photo,.p-shihan .archive-enlarge img,.p-dojo-pair .archive-enlarge img,.p-competitions .archive-enlarge img,.p-medals .archive-enlarge img{filter:none}
+
+/* Preserve the full group width and headroom in the standing training banner. */
+.hero-reel .reel-training .reel-photo{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;object-position:center top;top:0;bottom:auto;transform:none}
+.hero-reel,.reel-slide{overflow:clip}
+.hero-reel:has(.reel-training.is-active) .reel-seal{display:none}
