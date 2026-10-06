@@ -130,3 +130,6 @@ html.photo-is-open{overflow:hidden}
 .hero-reel .reel-training .reel-photo{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;object-position:center top;top:0;bottom:auto;transform:none}
 .hero-reel,.reel-slide{overflow:clip}
 .hero-reel:has(.reel-training.is-active) .reel-seal{display:none}
+/* Archive photo: keep the original top and full group width at every breakpoint. */
+.hero-reel .reel-archive .reel-photo{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;object-position:center top;top:0;bottom:auto;transform:none}
+.hero-reel:has(.reel-archive.is-active) .reel-seal{display:none}
