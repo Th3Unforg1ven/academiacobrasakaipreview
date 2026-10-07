@@ -133,3 +133,80 @@ html.photo-is-open{overflow:hidden}
 /* Archive photo: keep the original top and full group width at every breakpoint. */
 .hero-reel .reel-archive .reel-photo{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;object-position:center top;top:0;bottom:auto;transform:none}
 .hero-reel:has(.reel-archive.is-active) .reel-seal{display:none}
+
+/* Mobile editorial: predictable photo area, readable copy and thumb-sized controls. */
+@media(max-width:800px){
+  .pergaminho{--edge:clamp(20px,5.5vw,32px);--space:64px}
+  .pergaminho .masthead{width:auto;padding-block:14px 6px}
+  .masthead .brand{gap:10px;font-size:10px}
+  .masthead .brand img{width:38px;height:38px;border-radius:50%}
+  .masthead nav{display:flex;justify-content:space-between;gap:8px;margin-top:8px}
+  .masthead nav a{display:flex;align-items:center;min-height:44px;padding:0 4px;font-size:12px}
+  .p-opening{padding-top:12px}
+  .p-opening-title{padding-bottom:22px}
+  .p-opening-title>.tag{font-size:8px;letter-spacing:.13em;margin-bottom:15px}
+  .p-opening-title h1.signature{width:100%;margin-bottom:12px}
+  .p-brand-values{font-size:8px;gap:26px;letter-spacing:.13em}
+  .hero-reel{--photo-height:clamp(200px,66vw,360px);height:calc(var(--photo-height) + 340px)}
+  .hero-reel .reel-slide .reel-photo{height:var(--photo-height);width:100%;aspect-ratio:auto;object-fit:contain;object-position:center top;transform:none}
+  .hero-reel .reel-shade{background:linear-gradient(to bottom,transparent 0%,transparent calc(var(--photo-height) - 35px),#101210 var(--photo-height))}
+  .reel-copy{top:calc(var(--photo-height) + 8px);bottom:auto;max-width:560px}
+  .pergaminho .reel-copy h2{font-size:clamp(30px,8vw,43px);line-height:1.16;letter-spacing:-.035em}
+  .reel-copy>.tag{font-size:8px;margin-bottom:10px;letter-spacing:.16em}
+  .reel-copy>p:last-child{font-size:15px;line-height:1.65;margin-top:14px;max-width:44ch}
+  .reel-bottom{bottom:12px;gap:0;align-items:stretch}
+  .reel-bottom .p-invite{width:270px;max-width:100%;height:68px;margin-left:-6px}
+  .reel-controls,.reel-choices{width:100%;justify-content:space-between;gap:8px}
+  .reel-choices button{min-height:46px;font-size:11px;padding:6px 4px;gap:8px}
+  .reel-choices svg{width:13px;height:21px}
+  .reel-seal{font-size:20px;top:12px;right:12px;padding:6px 4px}
+  .reel-serpent{width:65%;height:45%;right:-25%;opacity:.07}
+  .p-opening-foot{gap:0;padding-block:18px;align-items:flex-start}
+  .p-opening-foot>span{font-size:8px;letter-spacing:.08em}
+  .p-opening-foot .action{font-size:12px}
+  .pergaminho h2,.pergaminho .p-together h2{font-size:clamp(28px,7.4vw,38px);line-height:1.28;text-wrap:balance}
+  .pergaminho h3{font-size:25px;line-height:1.35}
+  .p-grid,.p-history-intro,.p-together-intro{grid-template-columns:1fr;gap:22px}
+  .p-section-head>p,.p-together-intro>p,.p-history-copy>p:not(.tag){font-size:16px;line-height:1.8}
+  .p-practice-content{margin-top:34px}
+  .p-practice-content .activities{grid-template-columns:1fr;gap:32px}
+  .p-practice-content .activities article{min-height:0}
+  .p-practice-content .activities .tag{margin-bottom:12px}
+  .p-practice-content .activities p:not(.tag){font-size:16px;max-width:42ch;margin-block:12px}
+  .p-practice-content .activities .action{margin-top:0;gap:14px;font-size:13px}
+  .p-shihan{gap:30px}
+  .p-shihan .p-photo-heading>p:not(.tag){font-size:16px;line-height:1.8;margin-top:16px}
+  .p-shihan .p-portraits{gap:14px;align-items:start}
+  .p-shihan .p-portraits img{width:100%;height:clamp(195px,62vw,340px);object-fit:cover;object-position:center 25%}
+  .p-photo-gallery figcaption,.p-together .p-dojo-pair figcaption{font-size:9px;letter-spacing:.07em;line-height:1.6;margin-top:10px}
+  .p-history-album,.p-dojo-pair{grid-template-columns:1fr;gap:26px}
+  .p-together .p-dojo-pair img{aspect-ratio:auto;height:auto;object-fit:contain}
+  .p-history-album .archive-enlarge img{aspect-ratio:auto;background:transparent}
+  .p-photo-heading{margin-bottom:28px}
+  .p-competitions{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 14px}
+  .p-competitions figure:first-child{grid-column:1/-1}
+  .p-competitions img{width:100%;height:auto;max-height:none;background:transparent}
+  .p-medal-story{grid-template-columns:1fr;gap:24px;margin-top:44px}
+  .p-medals{gap:14px}
+  .p-medals img{height:auto;background:transparent}
+  .p-journal .readings{gap:32px;margin-top:30px}
+  .p-journal .readings p{font-size:16px}
+  .p-journal .readings a>span{padding-top:0;min-height:48px;margin-top:12px}
+  .p-address{padding:14px 0 0}
+  .p-address>img{border-radius:50%;width:64px;height:64px}
+  .p-visit>div>p{font-size:16px;line-height:1.8}
+  .pergaminho footer{font-size:9px;line-height:1.8;padding-block:26px}
+  .pergaminho footer>a{display:flex;align-items:center;min-height:44px;font-size:12px;margin-top:4px}
+  .p-lightbox[open]{padding:max(14px,env(safe-area-inset-top)) 14px max(14px,env(safe-area-inset-bottom))}
+}
+@media(max-width:360px){
+  .hero-reel{height:calc(var(--photo-height) + 365px)}
+  .reel-copy>p:last-child{font-size:14px}
+  .reel-choices button{font-size:10px;gap:5px}
+  .p-brand-values{gap:18px}
+}
+@media(hover:none){.pergaminho .action:active svg{transform:translateX(4px)}.archive-enlarge:active{opacity:.85}}
+@media(max-width:800px){
+ html{scroll-padding-top:24px}
+ .reel-bottom .p-brush{clip-path:inset(0 9% 0 8%)}
+}
